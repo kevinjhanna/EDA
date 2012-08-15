@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Ej1 {
 
-	public static void main(String[] args) {
+	public static void run() {
 		int[] array = createRandomArray(1000);
 		long start;
 		long end;
