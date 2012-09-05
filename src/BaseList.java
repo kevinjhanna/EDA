@@ -93,7 +93,7 @@ public class BaseList<T> implements List<T>{
 	}
 	
 	public int count(Comparator<T> cmp){
-		
+		return 1;
 	}
 
 	@Override

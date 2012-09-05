@@ -22,8 +22,6 @@ public class Ej1 {
 		
 		System.out.println(end - start);
 	}
-
-	
 	public static int[] createRandomArray(int n){
 		int[] array = new int[n];
 		
@@ -34,11 +32,21 @@ public class Ej1 {
 		return array;
 	}
 	
+	public static int[] createRandomArray(int n, int max){
+		int[] array = new int[n];
+		
+		Random random = new Random();	
+		for (int i = 0; i < n; i++){
+			array[i] = random.nextInt(max);
+		}
+		return array;
+	}
+		
 	public static void swap(int[] array, int i, int j){
 		int aux;
 		aux = array[i];
-		array[i] = array[i+1];
-		array[i+1] = aux;
+		array[i] = array[j];
+		array[j] = aux;
 	}
 	
 	public static void bubbleSort(int[] array){
